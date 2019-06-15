@@ -1,0 +1,6 @@
+﻿### Java ###
+# Compiled class file
+*.class
+*.log
+/**/bin/
+/.metadata/

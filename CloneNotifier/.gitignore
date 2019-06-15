@@ -1,0 +1,12 @@
+### Java ###
+# Compiled class file
+/.settings/
+*.txt
+*.html
+/file/
+/**/dataset
+/**/lsh.param
+/ccfx/bin/scripts/pp/*.pyc
+/ccfx/bin/scripts/*.pyc
+/testcase/
+a.ccfxd
