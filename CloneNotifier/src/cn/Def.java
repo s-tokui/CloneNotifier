@@ -66,12 +66,15 @@ public class Def {
 	/**
 	 * SourcererCC tokenizer のファイル名
 	 */
-	// public static final String SCC_TOKENIZER_NAME = "parser/java/tascc.jar";
+	public static final String SCC_TOKENIZER_NAME = "parser/java/tascc.jar";
 	// public static final String SCC_TOKENIZER_NAME =
 	// "parser/java/tascc_181115.jar";
 	// public static final String SCC_TOKENIZER_NAME =
 	// "parser/java/tascc_181122.jar";
-	public static final String SCC_TOKENIZER_NAME = "parser/java/tascc_190225.jar";
+	// public static final String SCC_TOKENIZER_NAME =
+	// "parser/java/tascc_190225.jar";
+	// public static final String SCC_TOKENIZER_NAME =
+	// "parser/java/tascc_190714.jar";
 
 	/**
 	 * SourcererCC SearchManager のファイル名

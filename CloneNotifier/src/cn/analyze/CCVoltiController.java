@@ -320,6 +320,17 @@ public class CCVoltiController {
 					}
 				}
 
+				for (;;) {
+					if (str[4].equals("(")) {
+						break;
+					} else {
+						str[3] += " " + str[4];
+						for (int i = 4; i < str.length - 1; i++) {
+							str[i] = str[i + 1];
+						}
+					}
+				}
+
 				// ファイル名取得
 				Path path = new File(str[3]).toPath();
 				String abstPath = path.toAbsolutePath().toString();

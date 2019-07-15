@@ -111,6 +111,8 @@ public class Project {
 	/** 送信先メールアドレスのリスト */
 	private ArrayList<String> toList = new ArrayList<String>();
 
+	private String granularity = "blocks";
+
 	/**
 	 * <p>プロジェクト名の取得</p>
 	 * @return プロジェクト名
@@ -734,5 +736,13 @@ public class Project {
 	 */
 	public void setTool(String tool) {
 		this.tool = tool;
+	}
+
+	public void setSCCGranularity(String granularity) {
+		this.granularity = granularity;
+	}
+
+	public String getSCCGranularity() {
+		return this.granularity;
 	}
 }

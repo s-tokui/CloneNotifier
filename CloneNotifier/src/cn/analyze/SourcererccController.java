@@ -87,11 +87,13 @@ public class SourcererccController {
 		final String headersFile = Paths.get(workDir, "input", "bookkeeping", "headers.file").toString();
 
 		// SourcererCC Tokenizer 実行用コマンド
-		String[] cmdArray1 = { "java", "-jar", sccTokenizer, project.getNewDir(), tokensFile, headersFile, "blocks",
+		String[] cmdArray1 = { "java", "-jar", sccTokenizer, project.getNewDir(), tokensFile, headersFile,
+				project.getSCCGranularity(),
 				project.getLang(), String.valueOf(project.getTokenTh()), "0", "0", "0" };
 
 		// SourcererCC Tokenizer 実行用コマンド
-		String[] cmdArray2 = { "java", "-jar", sccTokenizer, project.getOldDir(), tokensFile, headersFile, "blocks",
+		String[] cmdArray2 = { "java", "-jar", sccTokenizer, project.getOldDir(), tokensFile, headersFile,
+				project.getSCCGranularity(),
 				project.getLang(), String.valueOf(project.getTokenTh()), "0", "0", "0" };
 
 		// SourcererCC index 実行用コマンド
@@ -522,6 +524,17 @@ public class SourcererccController {
 						}
 					} else {
 						break;
+					}
+				}
+
+				for (;;) {
+					if (str[4].equals("(")) {
+						break;
+					} else {
+						str[3] += " " + str[4];
+						for (int i = 4; i < str.length - 1; i++) {
+							str[i] = str[i + 1];
+						}
 					}
 				}
 

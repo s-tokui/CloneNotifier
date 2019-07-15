@@ -45,6 +45,15 @@ public class SettingFileLoader {
 						project.setTool(removeSpace(line.replaceAll("TOOL:", "")));
 					}
 
+					// SourcererCC: Granularity (blocks, functions)
+					if (line.contains("GRANULARITY:")) {
+						String granularity = removeSpace(line.replaceAll("GRANULARITY:", ""));
+						if (granularity.equals("blocks") || granularity.equals("functions")
+								|| granularity.equals("file")) {
+							project.setSCCGranularity(granularity);
+						}
+					}
+					
 					// 言語設定
 					if(line.contains("LANGUAGE:")) {
 						project.setLang(removeSpace(line.replace("LANGUAGE:","")));
