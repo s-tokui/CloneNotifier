@@ -1,6 +1,6 @@
 # Clone Notifier
 
-[![https://youtu.be/xp7BFtuIuDs](https://img.youtube.com/vi/xp7BFtuIuDs/0.jpg)](https://www.youtube.com/watch?v=xp7BFtuIuDs)
+[![](https://img.youtube.com/vi/KCzsPjPJaPw/0.jpg)](https://www.youtube.com/watch?v=KCzsPjPJaPw)
 
 ## About this system
 - Clone Notifier notifies creation and change information of code clones to developers. 
